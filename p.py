@@ -10,8 +10,8 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage 
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.chains import create_retrieval_chain
+from langchain_classic.chains.combine_documents import create_stuff_documents_chain
+from langchain_classic.chains import create_retrieval_chain
 
 # --- 1. GLOBAL CONFIGURATION ---
 # This ensures all functions can see the database path and API key
@@ -137,3 +137,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

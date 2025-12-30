@@ -35,7 +35,7 @@ def load_llm_and_embeddings():
     # Use the GROQ_API_KEY variable defined above
     llm = ChatGroq(
         groq_api_key=GROQ_API_KEY, 
-        model_name="llama-3.3-70b-versatile", 
+        model_name="llama-3.1-8b-instant", 
         temperature=0.1
     )
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
@@ -137,4 +137,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
